@@ -238,6 +238,21 @@ flutter run
 
 ---
 
+## 🤖 AI Assistant Credit
+
+**Developed with assistance from Cascade AI** - Advanced Flutter development partner
+
+- **Architecture Guidance** - Clean Architecture with BLoC pattern
+- **Code Generation** - Auto-route, JSON serialization, database models
+- **UI/UX Implementation** - Steam-inspired design with animations
+- **Feature Development** - OCR integration, AI categorization, multi-currency
+- **Testing Strategy** - Unit tests, widget tests, integration tests
+- **Platform Configuration** - Cross-platform deployment setup
+
+*Special thanks to Cascade AI for helping transform this expense tracking concept into a production-ready Flutter application with modern architecture and advanced features.*
+
+---
+
 ## License
 
 MIT
