@@ -67,7 +67,7 @@ class _ExpenseFormBodyState extends State<_ExpenseFormBody>
   bool _isLoading = false;
   bool _isCategorizing = false;
   bool _showAiResult = false;
-  String _aiReasoning = '';
+  final String _aiReasoning = '';
   List<ExpenseCategory> _categories = [];
 
   late AnimationController _staggerCtrl;
@@ -312,7 +312,7 @@ class _ExpenseFormBodyState extends State<_ExpenseFormBody>
                               height: 1,
                               color: cs.outline.withOpacity(0.15)),
                           DropdownButtonFormField<String>(
-                            value: _categories
+                            initialValue: _categories
                                     .any((c) => c.id == _selectedCategory)
                                 ? _selectedCategory
                                 : (_categories.isNotEmpty

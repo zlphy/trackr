@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:device_preview/device_preview.dart';
 import 'config/injection.dart';
 import 'core/theme/app_theme.dart';
 import 'presentation/bloc/settings/settings_bloc.dart';
@@ -11,7 +12,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting();
   await initializeDependencies();
-  runApp(const ExpenseTrackerApp());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const ExpenseTrackerApp(),
+    ),
+  );
 }
 
 class ExpenseTrackerApp extends StatefulWidget {

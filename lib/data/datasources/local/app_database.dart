@@ -86,7 +86,7 @@ class AppDatabase extends _$AppDatabase {
   // ── Sample data ────────────────────────────────────────────────
   Future<void> seedSampleExpenses() async {
     final now = DateTime.now();
-    final d = (int days) => now.subtract(Duration(days: days));
+    DateTime d(int days) => now.subtract(Duration(days: days));
 
     final entries = [
       // ── Food & Drink (11) ─────────────────────────

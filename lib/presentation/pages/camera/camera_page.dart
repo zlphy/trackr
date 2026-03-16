@@ -74,7 +74,7 @@ class _CameraPageState extends State<CameraPage>
                     height: 280,
                     color: _processedImagePath != null
                         ? Colors.black
-                        : cs.surfaceVariant,
+                        : cs.surfaceContainerHighest,
                     child: _processedImagePath != null
                         ? Image.file(
                             File(_processedImagePath!),

@@ -11,6 +11,7 @@ abstract class Failure extends Equatable {
 }
 
 class DatabaseFailure extends Failure {
+  @override
   final String message;
 
   DatabaseFailure(this.message);
@@ -20,6 +21,7 @@ class DatabaseFailure extends Failure {
 }
 
 class NetworkFailure extends Failure {
+  @override
   final String message;
 
   NetworkFailure(this.message);
@@ -29,6 +31,7 @@ class NetworkFailure extends Failure {
 }
 
 class ServerFailure extends Failure {
+  @override
   final String message;
 
   ServerFailure(this.message);
@@ -38,6 +41,7 @@ class ServerFailure extends Failure {
 }
 
 class CacheFailure extends Failure {
+  @override
   final String message;
 
   CacheFailure(this.message);
@@ -47,6 +51,7 @@ class CacheFailure extends Failure {
 }
 
 class ValidationFailure extends Failure {
+  @override
   final String message;
 
   ValidationFailure(this.message);
@@ -56,6 +61,7 @@ class ValidationFailure extends Failure {
 }
 
 class PermissionFailure extends Failure {
+  @override
   final String message;
 
   PermissionFailure(this.message);
@@ -65,6 +71,7 @@ class PermissionFailure extends Failure {
 }
 
 class MLKitFailure extends Failure {
+  @override
   final String message;
 
   MLKitFailure(this.message);
@@ -74,6 +81,7 @@ class MLKitFailure extends Failure {
 }
 
 class UnknownFailure extends Failure {
+  @override
   final String message;
 
   UnknownFailure(this.message);

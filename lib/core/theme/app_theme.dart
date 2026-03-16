@@ -18,7 +18,7 @@ class AppTheme {
       primaryContainer: steamSlate, onPrimaryContainer: steamGrey,
       secondary: steamBlue, onSecondary: steamDeepNavy,
       surface: steamNavy, onSurface: steamGrey,
-      surfaceVariant: steamCard, onSurfaceVariant: steamDimGrey,
+      surfaceContainerHighest: steamCard, onSurfaceVariant: steamDimGrey,
       outline: steamSlate, outlineVariant: const Color(0xFF243447),
       error: const Color(0xFFFF4444), onError: Colors.white,
     );

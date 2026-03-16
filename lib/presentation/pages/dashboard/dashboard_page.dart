@@ -154,7 +154,7 @@ class _DashboardViewState extends State<_DashboardView>
 
           return RefreshIndicator(
             color: cs.primary,
-            backgroundColor: cs.surfaceVariant,
+            backgroundColor: cs.surfaceContainerHighest,
             onRefresh: () async => _reload(),
             child: CustomScrollView(
               slivers: [
@@ -717,7 +717,7 @@ class _CategoryBreakdownCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.fromLTRB(16, 12, 16, 4),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF243447) : cs.surfaceVariant,
+        color: isDark ? const Color(0xFF243447) : cs.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: cs.outline.withOpacity(0.18)),
         boxShadow: [
@@ -914,7 +914,7 @@ class _AnimatedExpenseItem extends StatelessWidget {
           child: Hero(
             tag: 'expense-${expense.id}',
             child: Material(
-              color: cs.surfaceVariant,
+              color: cs.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(12),
               child: InkWell(
                 onTap: onTap,
@@ -1043,7 +1043,7 @@ class _EmptyState extends StatelessWidget {
             width: 88,
             height: 88,
             decoration: BoxDecoration(
-              color: cs.surfaceVariant,
+              color: cs.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(20),
               border: Border.all(color: cs.outline.withOpacity(0.3)),
             ),

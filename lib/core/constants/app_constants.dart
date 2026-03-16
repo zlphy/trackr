@@ -1,7 +1,7 @@
 class AppConstants {
   static const String geminiBaseUrl =
       'https://generativelanguage.googleapis.com/v1beta';
-  static const String geminiModel = 'gemini-1.5-flash';
+  static const String geminiModel = 'gemini-2.5-flash';
 
   static const String prefKeyApiKey = 'gemini_api_key';
   static const String prefKeyThemeMode = 'theme_mode';

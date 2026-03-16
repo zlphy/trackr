@@ -214,7 +214,7 @@ flutter test test/
 | DI | get_it | ^7.7.0 |
 | Navigation | auto_route | ^9.2.2 |
 | On-device ML | google_mlkit_text_recognition | ^0.13.1 |
-| LLM API | (Gemini REST via Dio) | gemini-1.5-flash |
+| LLM API | (Gemini REST via Dio) | gemini-2.5-flash |
 | Camera | camera | ^0.10.6 |
 | Responsive | flutter_screenutil | ^5.9.3 |
 

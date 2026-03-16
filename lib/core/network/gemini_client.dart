@@ -77,7 +77,7 @@ class GeminiClient {
           return Exception('Invalid API key or request (400). Please check your Gemini API key in Settings.');
         }
         if (code == 401 || code == 403) {
-          return Exception('Unauthorized (${code}). Please check your Gemini API key in Settings.');
+          return Exception('Unauthorized ($code). Please check your Gemini API key in Settings.');
         }
         if (code == 429) {
           return Exception('Rate limit exceeded. Please wait a moment and try again.');
